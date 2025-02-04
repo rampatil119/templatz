@@ -1,4 +1,4 @@
-import React from "react";
+import { Outlet } from "@remix-run/react";
 
 const letter = {
   sender: {
@@ -49,6 +49,7 @@ function Letter() {
         <p> {letter.sender_details.name}</p>
         <p> {letter.sender_details.title}</p>
       </div>
+      <Outlet></Outlet>
     </div>
   );
 }
